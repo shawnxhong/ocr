@@ -1,0 +1,11 @@
+pillow
+opencv-python
+verovio
+openvino
+openvino-tokenizers
+nncf
+transformers
+torch
+torchvision
+optimum-intel
+gradio==5.49.1
