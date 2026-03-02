@@ -1,15 +1,24 @@
-# OCR GOT2.0
-1. Install dependencies
+# PaddleOCR + OpenVINO Demo
+
+## 1) Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-2. convert model
+## 2) Prepare PaddleOCR models
+
 ```bash
-optimum-cli export openvino --model stepfun-ai/GOT-OCR-2.0-hf --weight-format int4 GOT-OCR-2.0-hf\INT4
+python convert_models.py --output ../models/paddleocr-ov
 ```
 
-3. run 
+This downloads PaddleOCR detection / recognition / classifier / layout / table models,
+converts them to OpenVINO IR, and downloads dictionary files.
+
+## 3) Run app
+
 ```bash
-python run.py
+python run_ocr.py
 ```
+
+Then open `http://127.0.0.1:7860`.

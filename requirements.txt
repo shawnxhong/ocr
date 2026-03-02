@@ -1,11 +1,5 @@
-pillow
+openvino>=2024.0
 opencv-python
-verovio
-openvino
-openvino-tokenizers
-nncf
-transformers
-torch
-torchvision
-optimum-intel
+numpy
+pillow
 gradio==5.49.1
